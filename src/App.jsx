@@ -15,7 +15,7 @@ import PrivateRoutes from "./components/PrivateRoutes";
 import ScrollToTop from "./components/ScrollToTop";
 import AdminDashboard from './adminpage/Admindashboard'
 import AdminCompany from "./adminpage/AdminCompany";
-import UserManagement from "./adminpage/usermanagement";
+import UserManagement from "./adminpage/Usermanagement";
 
 function App() {
   return (
