@@ -1,0 +1,116 @@
+/* Final Optimized Responsive Design for Car Comparison Page */
+
+/* General Styles for Large Screens */
+@media screen and (max-width: 1400px) {
+    .result, .img-main-car img, .main-div-left, .main-div-right, .line {
+      width: 100%;
+    }
+  
+    .div-main {
+      gap: 60px;
+    }
+  
+    .table-main {
+      flex-direction: column;
+      margin-top: 60px;
+    }
+  
+    table {
+      width: 100%;
+    }
+  
+    .result-text, .main-button, .Winner-car {
+      font-size: 32px;
+    }
+  
+    .main-total h3 {
+      font-size: 30px;
+    }
+  }
+  
+  /* Medium Screens - Tablets */
+  @media screen and (max-width: 992px) {
+    .img-main-car img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .main-car-name, .company {
+      flex-direction: column;
+    }
+  
+    .car-name, .car-company {
+      margin-bottom: 10px;
+    }
+  
+    .Compare-button {
+      width: 100%;
+      height: 80px;
+    }
+  
+    .button-compare {
+      font-size: 24px;
+    }
+  
+    .result-text {
+      font-size: 28px;
+    }
+  }
+  
+  /* Small Screens - Mobile Devices */
+  @media screen and (max-width: 768px) {
+    .result-text, .main-button, .Winner-car, .main-total h3 {
+      font-size: 22px;
+    }
+  
+    .div-main {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .main-div-left, .main-div-right {
+      width: 100%;
+      height: 100px;
+      padding: 15px;
+    }
+  
+    .img-main-car img {
+      height: 200px;
+    }
+  
+    .Compare-button {
+      height: 70px;
+    }
+  
+    .button-compare {
+      font-size: 20px;
+    }
+  }
+  
+  /* Extra Small Screens */
+  @media screen and (max-width: 576px) {
+    .result-text, .main-button, .Winner-car, .main-total h3 {
+      font-size: 18px;
+    }
+  
+    .img-main-car img {
+      height: 180px;
+    }
+  
+    .Compare-button {
+      height: 60px;
+    }
+  
+    .button-compare {
+      font-size: 18px;
+    }
+  
+    .line {
+      width: 100%;
+    }
+  
+    .main-div-left, .main-div-right {
+      height: 90px;
+    }
+  }
+  

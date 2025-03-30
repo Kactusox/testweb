@@ -1,0 +1,313 @@
+.custom-div {
+    height: 60px;
+    width: 90%;
+}
+.search-container {
+    margin-top: 20px;
+    width: 1000px;
+}
+
+.form-select {
+    height: 60px;
+}
+.cars {
+    border-top: 1px solid black;
+}
+
+.cars-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.cars {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 50px;
+    /* background-color: #666; */
+}
+
+.car-card {
+    width: 280px;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    /* text-align: center; */
+    padding: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.car-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.car-image {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.car-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+    /* background-color: #3A425F; */
+}
+
+.cars-name {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.car-brand {
+    color: #666;
+    font-size: 14px;
+}
+.car-namings {
+    /* background-color: bisque; */
+}
+
+.car-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+    /* background-color: aqua; */
+}
+.edit-icon {
+    color: blue;
+    cursor: pointer;
+}
+/* .edit-icon:hover {
+    background-color: #666;
+    color: #ffffff;
+} */
+.delete-icon {
+    color: red;
+    cursor: pointer;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pagination-btn {
+    border: 1px solid #000;
+    background: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.pagination-btn:hover {
+    background-color: #3A425F;
+    color: #fff;
+}
+.pagination-text {
+    font-size: 14px;
+}
+
+/* Modal*/
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Modal Box */
+.modal-content {
+    background: white;
+    width: 60%; 
+    max-width: 800px;
+    max-height: 90vh; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+    overflow-y: auto; 
+}
+
+
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.car-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.car-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.car-form input,
+.car-form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+
+.image-preview {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.preview-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-success {
+    background: green;
+    color: white;
+}
+
+.btn-danger {
+    background: red;
+    color: white;
+}
+
+
+.car-form button {
+    grid-column: span 2;
+    margin-top: 10px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive design for MODAL */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        max-height: 85vh; 
+    }
+
+    .car-form {
+        grid-template-columns: 1fr; 
+    }
+
+    .car-form button {
+        grid-column: span 1;
+    }
+}
+
+/* Responsive design for PAGE ITSELF */
+@media (max-width: 1024px) {
+    .custom-div {
+        width: 95%;
+        padding: 12px;
+    }
+    .filters {
+        width: 95%;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .search-container {
+        max-width: 400px;
+    }
+    .column {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-div {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px;
+    }
+    .filters {
+        width: 100%;
+        padding: 10px;
+    }
+    .search-container {
+        width: 100%;
+        max-width: 100%;
+    }
+    .column {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column .col {
+        width: 100%;
+    }
+    .car-card {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filters {
+        padding: 5px;
+        gap: 10px;
+    }
+    .search-container {
+        width: 100%;
+    }
+    .search-container input {
+        height: 45px;
+    }
+    .form-select {
+        height: 45px;
+    }
+    .car-card {
+        margin-top: 10px;
+    }
+}

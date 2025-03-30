@@ -1,0 +1,409 @@
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+button {
+  outline: none;
+  border: 0;
+}
+
+.AdminLayout {
+  .input-group {
+    width: initial;
+  }
+  .headWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 0;
+
+    .wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      input {
+        width: 300px;
+      }
+    }
+
+    h1 {
+      font-size: 35px;
+    }
+  }
+  /* Admin Header */
+  .admin-header {
+    width: 100%;
+    height: 120px;
+    background-color: #3a425f;
+    color: aliceblue;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  .admin-header h1 {
+    font-size: 35px;
+  }
+
+  .admin-header p {
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  .admin-header p:hover {
+    color: rgb(225, 197, 124);
+  }
+
+  .bodyContainer {
+    display: flex;
+    width: 100%;
+    /* background-color: #1f3a9b; */
+    /* border-bottom: 0.5px solid black; */
+  }
+
+  .sidebar {
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 250px;
+    padding: 20px;
+    border-right: 1px solid #001ba10d;
+    position: sticky;
+    top: 120px;
+    background-color: #001ba10d;
+    box-shadow: 0 0 10px #001ba12b;
+    z-index: 999;
+  }
+
+  .dashboard-options {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .list-options {
+    margin-top: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #001ba161;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .list-options a {
+    color: #000;
+    text-decoration: none;
+  }
+  .list-options:hover {
+    background-color: #3a425f29;
+    /* background-color: #5883B8; */
+  }
+  /* .icons:hover {
+      color: #fff;
+    } */
+
+  .logout {
+    margin-top: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mainBody {
+    width: 80%;
+    padding: 30px 40px;
+    // text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    /* background-color: #5883B8; */
+  }
+
+  .total-user,
+  .total-car {
+    max-width: 900px;
+    width: 90%;
+    height: auto;
+    border: 0.5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    /* background-color: beige; */
+  }
+
+  .total-user h3,
+  .total-car h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .total-user p,
+  .total-car p {
+    font-size: 25px;
+    margin-right: 30px;
+  }
+
+  .icons {
+    color: #5883b8;
+    font-size: 30px;
+  }
+
+  /* Responsive Design Part */
+  @media screen and (max-width: 1024px) {
+    .bodyContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar {
+      width: 20%;
+      text-align: center;
+      border-right: none;
+      border-bottom: 1px solid black;
+      padding-bottom: 20px;
+    }
+
+    .list-options {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .logout {
+      position: static;
+      margin-top: 20px;
+    }
+
+    .mainBody {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .admin-header h1 {
+      font-size: 20px;
+    }
+
+    .admin-header p {
+      font-size: 16px;
+    }
+
+    .sidebar {
+      padding: 15px;
+    }
+
+    .list-options {
+      font-size: 18px;
+    }
+
+    .total-user,
+    .total-car {
+      width: 90%;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .total-user h3,
+    .total-car h3 {
+      flex-direction: column;
+    }
+
+    .total-user p,
+    .total-car p {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .admin-header {
+      height: auto;
+      padding: 15px;
+    }
+
+    .sidebar {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .list-options {
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .icons {
+      font-size: 25px;
+    }
+
+    .logout {
+      font-size: 16px;
+    }
+
+    .total-user,
+    .total-car {
+      width: 100%;
+      padding: 10px;
+      flex-direction: column;
+    }
+
+    .total-user h3,
+    .total-car h3 {
+      font-size: 16px;
+      flex-direction: column;
+    }
+
+    .total-user p,
+    .total-car p {
+      font-size: 16px;
+    }
+  }
+}
+
+.table {
+  tr {
+    &.notActive {
+      td {
+        background-color: #7878784a;
+      }
+    }
+  }
+}
+.highlight {
+  background-color: yellow; /* You can change this to any color you like */
+  font-weight: bold;
+}
+
+.myModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .wrap {
+    background: #fff;
+    position: relative;
+    width: 55%;
+    padding: 40px 80px;
+    border-radius: 10px;
+    z-index: 99;
+    transition: all 0.2s ease-in-out;
+
+    h5 {
+      color: #000 !important;
+    }
+  }
+
+  .close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 83%);
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.Loading {
+  padding: 20px;
+  text-align: center;
+}
+
+.NoData {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.modal-content {
+  width: 100% !important;
+}
+
+.img-main-car {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.swiper-container {
+  flex: 1;
+  width: 50%;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 500px; /* Adjust based on your needs */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* For swiper pagination bullets */
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+  .img-main-car {
+    flex-direction: column;
+  }
+
+  .swiper-container {
+    width: 100%;
+  }
+
+  .swiper-image {
+    height: 300px;
+  }
+}

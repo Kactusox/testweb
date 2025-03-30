@@ -1,0 +1,1 @@
+export const CAR_COMPARISON_TOKEN = 'car_comparison_token'

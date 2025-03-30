@@ -1,0 +1,659 @@
+/* Header Part TOP */
+
+.mainContainer {
+  background-image: url("../img/mainBackground.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: top center; */
+  width: 100%;
+  height: 100vh;
+  user-select: none;
+}
+
+.header {
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  /* background-color: #d69028; */
+}
+.container h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: goldenrod;
+}
+
+.nav li {
+  list-style: none;
+  margin-left: 10px;
+  font-size: 22px;
+  font-style: none;
+}
+.sign-in-btn {
+  margin-left: 20px;
+  background-color: #fff;
+  border: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #d69028;
+  color: #fff;
+}
+.icon {
+  margin-right: 5px;
+}
+
+.icon:hover {
+  background-color: #d69028;
+  color: #fff;
+}
+
+/* Search section in the middle */
+
+.text-center {
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.text-center h2 {
+  color: #fff;
+  font-size: 70px;
+  width: 720px;
+  text-align: center;
+  margin: auto;
+}
+
+.search-bar {
+  width: 830px;
+  height: 66px;
+  border-radius: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: auto;
+  margin-top: 60px;
+  gap: 10px;
+}
+
+.search-bar select {
+  min-width: 150px;
+  max-width: 250px;
+  width: auto;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.searchBtn {
+  width: 180px;
+  border-radius: 80px;
+  height: 50px;
+  background-color: #405ff2;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchBtn:hover {
+  background-color: #3451d1;
+}
+
+/* Finalizing the header */
+
+/* Compare Section Header */
+
+.compareHeader {
+  margin-bottom: 30px;
+  margin-top: -170px;
+  border-top-right-radius: 80px;
+  border-top-left-radius: 80px;
+  background-color: #eaeaea;
+  width: 100%;
+  padding: 0px 200px 0px 200px;
+  height: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #298cbd;  */
+}
+
+.compareHeader h3 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.compareHeader p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Comaprison Section  */
+.compare-cars-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.car-form-card {
+  background-color: #e6ebfe;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 550px;
+  height:720px;
+}
+
+.car-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.car-form label {
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+}
+
+.compareBtn {
+  width: 250px;
+  height: 50px;
+  background-color: #3a425f;
+  color: #ffff;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.compareBtn:hover {
+  background-color: #556987;
+  color: #ffffff;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Finalizing Comparison Section */
+
+/* Popular Comparisons */
+
+.popular-comparisons {
+  /* width: 100%; */
+  height: 100vh;
+  background-color: #3a425f;
+  margin-top: 50px;
+}
+.popular-comparisons h3 {
+  color: #fff;
+  font-size: 50px;
+  width: 300px;
+  margin-left: 200px;
+  padding-top: 150px;
+  /* text-decoration: underline; */
+  /* background-color: aquamarine; */
+}
+.popular-comparisons hr {
+  width: 500px;
+  color: #ffffff;
+  margin-left: 200px;
+}
+
+.comparison-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: aqua;  */
+  padding: 50px;
+  width: 100%;
+}
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card {
+  background-color: #ffffff;
+  width: 40%;
+  height: 380px;
+  border: none;
+}
+.card p {
+  font-size: 20px;
+  color: #050b20;
+  /* background-color: aqua; */
+  width: 450px;
+  margin: 20px;
+  padding: 10px;
+  border-bottom: 0.5px solid #e9e9e9;
+}
+.iconLink {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: beige; */
+  /* margin: 20px; */
+  padding: 20px;
+  font-size: 20px;
+}
+.iconLink a {
+  font-size: 18px;
+  color: #405ff2;
+  /* padding: 5px; */
+}
+
+/* Finalizing */
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  text-align: center;
+  padding: 50px;
+  margin-top: -70px;
+}
+.footerCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  font-size: 35px;
+  /* background-color: #3451d1; */
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  /* Default styles work well here; no changes needed */
+}
+
+/* Medium screens (992px to 1199px) */
+@media (max-width: 1199px) {
+  .mainContainer {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  .container h1 {
+    font-size: 36px;
+  }
+
+  .text-center h2 {
+    font-size: 50px;
+    width: 85%;
+    max-width: 720px;
+  }
+
+  .search-bar {
+    width: 90%;
+    max-width: 830px;
+  }
+
+  .compareHeader {
+    padding: 0 100px;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .compareHeader h3 {
+    font-size: 60px;
+  }
+
+  .car-form-card {
+    width: 48%;
+    height: auto;
+    min-height: 650px;
+  }
+  .comparison-cards .card {
+    width: 48%;
+  }
+  .card p {
+    width: 350px;
+  }
+  .popular-comparisons h3,
+  .popular-comparisons hr {
+    margin-left: 100px;
+  }
+
+  .comparison-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer {
+    height: 100px;
+    padding: 30px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .footerCon {
+    font-size: 30px;
+  }
+}
+
+/* Tablets (768px to 991px) */
+@media (max-width: 991px) {
+  .mainContainer {
+    background-size: cover;
+  }
+
+  .header {
+    padding: 15px;
+  }
+
+  .container h1 {
+    font-size: 32px;
+  }
+
+  .nav li {
+    font-size: 18px;
+  }
+
+  .text-center {
+    margin-top: 120px;
+  }
+
+  .text-center h2 {
+    font-size: 48px;
+    width: 90%;
+    margin-top: 200px;
+  }
+
+  .search-bar {
+    width: 95%;
+    height: auto;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .compareHeader {
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-top: -100px;
+  }
+  .compareHeader h3 {
+    font-size: 50px;
+  }
+  .compareHeader img{
+    height: 120px;
+  }
+
+  .car-form-card {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .form-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .popular-comparisons {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .popular-comparisons h3 {
+    font-size: 40px;
+    margin-left: 50px;
+    padding-top: 80px;
+  }
+
+  .popular-comparisons hr {
+    width: 300px;
+    margin-left: 50px;
+  }
+
+  .card p {
+    font-size: 18px;
+    width: auto;
+  }
+  .footerCon {
+    font-size: 24px;
+  }
+}
+/* Mobile (576px to 767px) */
+@media (max-width: 767px) {
+  .mainContainer {
+    background-size: cover;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container h1 {
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav li {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .sign-in-btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .text-center {
+    margin-top: 80px;
+  }
+
+  .text-center h2 {
+    font-size: 40px;
+  }
+
+  .search-bar {
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+  } 
+/* 
+  .search-bar select,
+  .searchBtn {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 15px;
+  }  */
+
+  .compareHeader {
+    padding: 20px;
+    height: auto;
+  }
+
+  .compareHeader h3 {
+    font-size: 36px;
+  }
+
+  .compare-cars-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .car-form-card {
+    width: 80%;
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .compareBtn {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .popular-comparisons {
+    height: auto;
+    padding-bottom: 50px;
+    /* background-color: #3451d1; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-comparisons h3 {
+    font-size: 36px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .popular-comparisons hr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .comparison-cards {
+    margin: auto;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .comparison-cards .card {
+    width: 90%;
+  }
+
+
+  .footer {
+    height: auto;
+    padding: 30px 20px;
+    margin-top: 0;
+  }
+
+  .footerCon {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    gap: 10px;
+  }
+}
+
+/* Small mobile (up to 575px) */
+/* @media (max-width: 575px) {
+  .mainContainer {
+    background-size: cover;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .text-center h2 {
+    font-size: 28px;
+  }
+
+  .compareHeader h3 {
+    font-size: 30px;
+  }
+
+  .compareHeader p {
+    font-size: 16px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .car-form-card {
+    padding: 15px;
+  }
+
+  .car-image {
+    height: 200px;
+  }
+
+  .iconLink {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}  */

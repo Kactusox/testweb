@@ -1,0 +1,25 @@
+.msg-box-container {
+    width: 90%;
+    margin-top: 20px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.msg-box {
+    background-color: #ccc;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.msg-box p {
+    margin: 5px 0; 
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #000000;
+    margin: 10px 0;
+}
